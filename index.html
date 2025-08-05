@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard with Sidebar</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar" id="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-bars toggle-icon" id="toggleBtn"></i>
+        <span class="logo-text">TASK 1</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i><span>Messages</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+
+      <div class="account-section">
+        <img src="https://i.pravatar.cc/40" alt="User" class="avatar" />
+        <div class="account-info">
+          <span class="username">Rimsha Ejaz</span>
+          <span class="role">Admin</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <h1>Welcome, Rimsha!</h1>
+      <p>This is your dashboard. You can manage everything from here.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Projects</h3>
+          <p>5 ongoing projects</p>
+        </div>
+        <div class="card">
+          <h3>Messages</h3>
+          <p>12 new messages</p>
+        </div>
+        <div class="card">
+          <h3>Tasks</h3>
+          <p>3 tasks due today</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
